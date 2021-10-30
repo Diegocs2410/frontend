@@ -1,107 +1,68 @@
 # Proyecto PSL Tema 4 Comfenalco
 
-Proyecto Fullstack para la administracion de pequeñas notas o tareas de usuarios. Comprende herramientas como ReactJs, expressJs y mongoDB. Además de algunos módulos como mongoose,cors,morgan,datetime-picker.
+Proyecto Fullstack para la administracion de pequeñas notas o tareas de usuarios. Comprende herramientas como \* [Reactjs](https://es.reactjs.org/), \* [ExpressJs](https://expressjs.com/es/) y \* [MongoDB](https://www.mongodb.com/es). Además de algunos módulos como mongoose,cors,morgan,datetime-picker.
 
-_Asímismo se utilizaron herramientas y librerías como Bootstrap._
+_Para el FrontEnd \* [Bootstrap](https://getbootstrap.com/)_
 
 ## Comenzando 🚀
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+_Estas instrucciones te permitirán obtener una copia del proyecto del reposirorio de Github._
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+### Link Repositorio 📋
 
-
-### Pre-requisitos 📋
-
-_Que cosas necesitas para instalar el software y como instalarlas_
+_Una vez clonado o descargado el proyecto, ejecuta el siguiente comando dentro de la carpeta raíz_
 
 ```
-Da un ejemplo
+npm install
 ```
 
-### Instalación 🔧
+### Levantando el servidor 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
+_Luego de tener todas las dependencias instaladas, ejecutamos el siguiente código_
 
 ```
-Da un ejemplo
+npm start
 ```
 
-_Y repite_
+_Cuando la app inicia correctamente, podrás observar una imagen como la siguiente_
+![Imagén de Login](/src/img/login.png 'Página principal login')
 
-```
-hasta finalizar
-```
+---
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+## Si no tienes usuario, puedes registrarte
 
-## Ejecutando las pruebas ⚙️
+![Imagén de Login](/src/img/register.png 'Registro ')
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+_El sistema validará nombre, email y password_
 
-### Analice las pruebas end-to-end 🔩
+### Una vez dentro de la aplicación, podras crear tus notas ⌨️
 
-_Explica que verifican estas pruebas y por qué_
+![Imagén de Login](/src/img/createNote.png 'Crear Nota')
 
-```
-Da un ejemplo
-```
+### Agrega Un titulo, descripción, prioridad y una fecha para realizar ⌨️
 
-### Y las pruebas de estilo de codificación ⌨️
+![Imagén de Login](/src/img/addNote.png 'Crear Nota')
 
-_Explica que verifican estas pruebas y por qué_
+### Luego la app te direcciona al apartado de tus notas, donde podras eliminarlas o editarlas en los respectivos botons ⌨️
 
-```
-Da un ejemplo
-```
-
-## Despliegue 📦
-
-_Agrega notas adicionales sobre como hacer deploy_
+![Imagén de Login](/src/img/noteList.png 'Lista de notas')
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+_Se utilizaron las siguientes herramietnas para la creación de esta aplicación_
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+- \* [Reactjs](https://es.reactjs.org/) para el FrontEnd
+- \* [Bootstrap](https://getbootstrap.com/) para la estilización
+- \* [ExpressJs](https://expressjs.com/es/) - Infraestructura de la aplicación de
+- \* [MongoDB](https://www.mongodb.com/es) - Administración de datos y notas
 
-## Contribuyendo 🖇️
+## Repositorios 🖇️
 
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Para el [Backend](https://github.com/Diegocs2410/Backend4) y para el [FrontEnd](https://github.com/Diegocs2410/frontend)
 
 ## Expresiones de Gratitud 🎁
 
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
+- Gracias infinicas a José Luis Trujillo Sánchez, Ingeniero y docente por la enseñanza de los poryectos 📢
+- A Comfenalco por permitirme hacer parte del diplomado FullStack y tener mejores conocimientos para mejorar mi perfil laboral.
 
-
-
----
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+⌨️ con ❤️ por [Diego C](https://github.com/Diegocs2410) 😊
