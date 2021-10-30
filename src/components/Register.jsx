@@ -1,21 +1,17 @@
 import { useState } from 'react';
+import { useHistory } from 'react-router';
 import { useUser } from '../context/UserContext';
 import { Loading } from './Loading';
-import { useHistory } from 'react-router-dom';
 
-export const Login = () => {
+export const Register = () => {
   const history = useHistory();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const { loginUser, isLoading } = useUser();
+  const [userData, setUserData] = useState({ name: '', email: '', password: '' });
+  const { isLoading, registerUser } = useUser();
 
-  // login Function
-  const login = (e) => {
+  const register = (e) => {
     e.preventDefault();
-    const user = { email, password };
-    loginUser(user, history);
+    registerUser(userData, history);
   };
-
   return (
     <>
       {isLoading ? (
@@ -23,10 +19,25 @@ export const Login = () => {
       ) : (
         <div className='container'>
           <div className='d-grid  align-content-center min-vh-100 justify-content-center'>
-            <form onSubmit={login}>
+            <form onSubmit={register}>
               <div className='card p-5 shadow border-5 bg-gradient'>
                 <i className='fas fa-user text-center fa-3x '></i>
-                <h3 className='text-center fw-bold fs-1 mb-5'>Login</h3>
+                <h3 className='text-center fw-bold fs-1 mb-5'>Register</h3>
+                <div className='mb-3'>
+                  <label htmlFor='username' className='form-label'>
+                    Name
+                  </label>
+                  <input
+                    type='text'
+                    className='form-control'
+                    id='name'
+                    placeholder='ex: Pepito Perez'
+                    autoFocus
+                    required
+                    onChange={(e) => setUserData({ ...userData, name: e.target.value })}
+                    value={userData.name}
+                  />
+                </div>
                 <div className='mb-3'>
                   <label htmlFor='username' className='form-label'>
                     Username / Email
@@ -38,8 +49,8 @@ export const Login = () => {
                     placeholder='email@email.com'
                     autoFocus
                     required
-                    onChange={(e) => setEmail(e.target.value)}
-                    value={email}
+                    onChange={(e) => setUserData({ ...userData, email: e.target.value })}
+                    value={userData.email}
                   />
                 </div>
                 <div className='mb-3'>
@@ -47,17 +58,17 @@ export const Login = () => {
                     Password
                   </label>
                   <input
-                    type='password'
+                    type='text'
                     className='form-control'
                     id='password'
                     placeholder='******'
                     required
-                    onChange={(e) => setPassword(e.target.value)}
-                    value={password}
+                    onChange={(e) => setUserData({ ...userData, password: e.target.value })}
+                    value={userData.password}
                   />
                 </div>
                 <button className='btn btn-primary boton ' type='submit'>
-                  Login
+                  Register
                 </button>
               </div>
             </form>

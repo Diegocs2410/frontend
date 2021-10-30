@@ -24,7 +24,7 @@ export const UserProvider = (props) => {
   const loginUser = async (user, history) => {
     try {
       setIsLoading(true);
-      const { data } = await axios.post('http://localhost:4000/user/login', user);
+      const { data } = await axios.post('/user/login', user);
       setIsLoading(false);
       // Now, capture the "ok" property and check if it's true'
       if (data.ok) {
@@ -60,7 +60,7 @@ export const UserProvider = (props) => {
   const registerUser = async (user, history) => {
     try {
       setIsLoading(true);
-      const { data } = await axios.post('http://localhost:4000/user/register', user);
+      const { data } = await axios.post('/user/register', user);
       setIsLoading(false);
       if (data.ok) {
         const userLogin = {
