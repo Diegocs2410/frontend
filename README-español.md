@@ -64,5 +64,6 @@ Para el [Backend](https://github.com/Diegocs2410/Backend4) y para el [FrontEnd](
 
 - Gracias infinicas a José Luis Trujillo Sánchez, Ingeniero y docente por la enseñanza de los poryectos 📢
 - A Comfenalco por permitirme hacer parte del diplomado FullStack y tener mejores conocimientos para mejorar mi perfil laboral.
+- Compañeros de grupo de comfenalco, mil y mil gracias por resolver las dudas presentadas durante la creación del proyecto.
 
 ⌨️ con ❤️ por [Diego C](https://github.com/Diegocs2410) 😊
